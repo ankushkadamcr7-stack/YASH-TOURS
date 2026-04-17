@@ -1,0 +1,114 @@
+import { Phone, Mail, MapPin, Send } from 'lucide-react';
+
+export default function Contact() {
+  return (
+    <section id="contact" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className="text-sm font-bold text-orange-500 uppercase tracking-widest mb-2">Contact Us</h2>
+          <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h3>
+          <p className="text-gray-600 text-lg">
+            Have a question or need to book a ride? Contact us today and we'll be happy to help.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Contact Info & Map */}
+          <div className="space-y-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                <div className="w-12 h-12 bg-blue-100 text-blue-900 rounded-full flex items-center justify-center mb-4">
+                  <Phone size={24} />
+                </div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Call Us</h4>
+                <p className="text-gray-600 mb-1">+91 98765 43210</p>
+                <p className="text-gray-600">+91 98765 43211</p>
+              </div>
+              
+              <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
+                <div className="w-12 h-12 bg-orange-100 text-orange-500 rounded-full flex items-center justify-center mb-4">
+                  <Mail size={24} />
+                </div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Email Us</h4>
+                <p className="text-gray-600 mb-1">info@yashtours.com</p>
+                <p className="text-gray-600">booking@yashtours.com</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100 flex gap-4">
+              <div className="w-12 h-12 bg-green-100 text-green-600 rounded-full flex items-center justify-center shrink-0">
+                <MapPin size={24} />
+              </div>
+              <div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2">Our Location</h4>
+                <p className="text-gray-600">
+                  Shop No. 5, Main Road, Near Bus Stand, Ratnagiri, Maharashtra 415612
+                </p>
+              </div>
+            </div>
+
+            {/* Map Embed Dummy */}
+            <div className="h-64 bg-gray-200 rounded-2xl overflow-hidden relative">
+              <div className="absolute inset-0 flex items-center justify-center text-gray-500 flex-col gap-2">
+                <MapPin size={32} />
+                <span>Google Map Embed</span>
+              </div>
+              <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" alt="Map" className="w-full h-full object-cover opacity-50" referrerPolicy="no-referrer" />
+            </div>
+          </div>
+
+          {/* Contact Form */}
+          <div className="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
+            <h4 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h4>
+            <form className="space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
+                  <input
+                    type="text"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-50 transition-colors"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                  <input
+                    type="tel"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-50 transition-colors"
+                    placeholder="+91 98765 43210"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                <input
+                  type="email"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-50 transition-colors"
+                  placeholder="john@example.com"
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                <textarea
+                  rows={4}
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-50 transition-colors resize-none"
+                  placeholder="How can we help you?"
+                ></textarea>
+              </div>
+              
+              <button
+                type="button"
+                className="w-full bg-blue-900 text-white py-4 rounded-xl font-bold hover:bg-blue-800 transition-colors shadow-lg shadow-blue-900/20 flex items-center justify-center gap-2"
+              >
+                <span>Send Message</span>
+                <Send size={18} />
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
