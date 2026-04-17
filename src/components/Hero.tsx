@@ -40,14 +40,14 @@ export default function Hero() {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="tel:+919876543210"
+                href="tel:+919892676143"
                 className="flex items-center justify-center gap-3 bg-orange-500 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-orange-600 transition-all shadow-lg shadow-orange-500/30 hover:-translate-y-1"
               >
                 <Phone size={22} />
                 <span>Call Now</span>
               </a>
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919892676143"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#20bd5a] transition-all shadow-lg shadow-[#25D366]/30 hover:-translate-y-1"

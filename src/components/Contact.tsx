@@ -1,6 +1,38 @@
+import { useState } from 'react';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    const { name, phone, email, message } = formData;
+    
+    if (!name || !phone || !message) {
+      alert("Please fill in your name, phone, and message.");
+      return;
+    }
+
+    const whatsappMessage = `*New Contact Inquiry*%0A%0A` +
+      `*Name:* ${name}%0A` +
+      `*Phone:* ${phone}%0A` +
+      `*Email:* ${email || 'Not provided'}%0A` +
+      `*Message:* ${message}`;
+
+    const whatsappUrl = `https://wa.me/919892676143?text=${whatsappMessage}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -21,8 +53,8 @@ export default function Contact() {
                   <Phone size={24} />
                 </div>
                 <h4 className="text-lg font-bold text-gray-900 mb-2">Call Us</h4>
-                <p className="text-gray-600 mb-1">+91 98765 43210</p>
-                <p className="text-gray-600">+91 98765 43211</p>
+                <p className="text-gray-600 mb-1">+91 98926 76143</p>
+                <p className="text-gray-600">+91 98926 76143</p>
               </div>
               
               <div className="bg-gray-50 p-6 rounded-2xl border border-gray-100">
@@ -47,13 +79,18 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Map Embed Dummy */}
+            {/* Map Embed */}
             <div className="h-64 bg-gray-200 rounded-2xl overflow-hidden relative">
-              <div className="absolute inset-0 flex items-center justify-center text-gray-500 flex-col gap-2">
-                <MapPin size={32} />
-                <span>Google Map Embed</span>
-              </div>
-              <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop" alt="Map" className="w-full h-full object-cover opacity-50" referrerPolicy="no-referrer" />
+              <iframe 
+                src="https://maps.google.com/maps?q=Ratnagiri,%20Maharashtra%20415612&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen={true} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-full"
+              ></iframe>
             </div>
           </div>
 
@@ -75,7 +112,7 @@ export default function Contact() {
                   <input
                     type="tel"
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-50 transition-colors"
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 98926 76143"
                   />
                 </div>
               </div>

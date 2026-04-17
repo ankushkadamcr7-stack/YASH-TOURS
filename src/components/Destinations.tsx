@@ -5,32 +5,32 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const destinations = [
   {
     name: 'Ganpatipule',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Swayambhu_Ganpati_Temple%2C_Ganpatipule.jpg/800px-Swayambhu_Ganpati_Temple%2C_Ganpatipule.jpg',
+    image: 'https://3.imimg.com/data3/PU/KP/MY-10726936/ganapatipule.png',
     description: 'Famous for its pristine beach and Swayambhu Ganpati Temple.',
   },
   {
     name: 'Jaigad Fort',
-    image: 'https://images.unsplash.com/photo-1564507592208-0270e9402511?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://www.roaring-india.com/ri_media/Complete-View-of-Jaigad-Fort.jpg',
     description: 'A 16th-century fort offering panoramic views of the Arabian Sea.',
   },
   {
     name: 'Marleshwar Temple',
-    image: 'https://images.unsplash.com/photo-1621886292650-520f76c747d6?q=80&w=2071&auto=format&fit=crop',
+    image: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/54/93/1b/photo0jpg.jpg?w=1200&h=-1&s=1',
     description: 'A cave temple dedicated to Lord Shiva, surrounded by waterfalls.',
   },
   {
     name: 'Aare Ware Beach',
-    image: 'https://images.unsplash.com/photo-1615887023516-9bfa6da8861c?q=80&w=1974&auto=format&fit=crop',
+    image: 'https://www.greenleaftheresort.com/images/aare-ware-beach.jpg',
     description: 'One of the most beautiful and untouched beaches in Konkan.',
   },
   {
     name: 'Ratnadurg Fort',
-    image: 'https://images.unsplash.com/photo-1590050720455-83e954546c1a?q=80&w=2070&auto=format&fit=crop',
+    image: 'https://im.whatshot.in/img/2020/Feb/ratndurg-or-bhagavati-fort-body-07-ratnadurg-cropped-2-1582530555.jpg?w=375&h=375&q=60&wp=1',
     description: 'A magnificent historical fort surrounded by the Arabian Sea on three sides.',
   },
   {
     name: 'Bhatye Beach',
-    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=2073&auto=format&fit=crop',
+    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1325664100782203',
     description: 'A long, flat, and peaceful beach perfect for evening strolls and sunset views.',
   }
 ];
@@ -99,7 +99,7 @@ export default function Destinations() {
               </button>
             </div>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919892676143"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:inline-flex items-center justify-center bg-white text-blue-900 px-6 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors shrink-0"
@@ -128,7 +128,7 @@ export default function Destinations() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "0px 100px 0px 0px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="snap-start shrink-0 w-[85%] sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] group relative rounded-2xl overflow-hidden aspect-[3/4] cursor-pointer"
+                className="snap-start shrink-0 w-[85%] sm:w-[calc(50%-12px)] lg:w-[calc(25%-18px)] group relative rounded-2xl overflow-hidden aspect-[4/3] cursor-pointer"
               >
                 <img
                   src={dest.image}

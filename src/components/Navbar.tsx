@@ -50,7 +50,7 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href="tel:+919876543210"
+              href="tel:+919892676143"
               className="flex items-center gap-2 bg-orange-500 text-white px-5 py-2.5 rounded-full font-semibold hover:bg-orange-600 transition-colors shadow-lg shadow-orange-500/30"
             >
               <Phone size={18} />
@@ -86,7 +86,7 @@ export default function Navbar() {
             ))}
             <div className="pt-4 px-3">
               <a
-                href="tel:+919876543210"
+                href="tel:+919892676143"
                 className="flex items-center justify-center gap-2 w-full bg-orange-500 text-white px-5 py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors"
               >
                 <Phone size={20} />

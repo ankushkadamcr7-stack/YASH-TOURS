@@ -36,7 +36,7 @@ export default function BookingForm() {
       `*Time:* ${time || 'Not specified'}%0A` +
       `*Car Type:* ${carType || 'Not specified'}`;
 
-    const whatsappUrl = `https://wa.me/919876543210?text=${message}`;
+    const whatsappUrl = `https://wa.me/919892676143?text=${message}`;
     window.open(whatsappUrl, '_blank');
   };
 
@@ -88,7 +88,7 @@ export default function BookingForm() {
                 onChange={handleChange}
                 required
                 className="block w-full pl-10 pr-3 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-50 text-gray-900 transition-colors"
-                placeholder="+91 98765 43210"
+                placeholder="+91 98926 76143"
               />
             </div>
           </div>
