@@ -30,7 +30,7 @@ const destinations = [
   },
   {
     name: 'Bhatye Beach',
-    image: 'https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=1325664100782203',
+    image: 'https://www.trawell.in/admin/images/upload/043721238Ratnagiri_Bhatye_Beach_Main.jpg',
     description: 'A long, flat, and peaceful beach perfect for evening strolls and sunset views.',
   }
 ];
@@ -69,6 +69,15 @@ export default function Destinations() {
     return () => clearInterval(timer);
   }, [isHovered]);
 
+  const handleBookTour = (destinationName?: string) => {
+    const message = destinationName 
+      ? `*Tour Package Inquiry*%0A%0A*Destination:* ${destinationName}%0AI would like to know more about this tour package.`
+      : `*Tour Package Inquiry*%0A%0AI would like to know more about your tour packages.`;
+    
+    const whatsappUrl = `https://wa.me/919892676143?text=${message}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <section id="destinations" className="py-20 bg-blue-900 text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -98,14 +107,12 @@ export default function Destinations() {
                 <ChevronRight size={24} />
               </button>
             </div>
-            <a
-              href="https://wa.me/919892676143"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => handleBookTour()}
               className="hidden sm:inline-flex items-center justify-center bg-white text-blue-900 px-6 py-3 rounded-xl font-bold hover:bg-gray-100 transition-colors shrink-0"
             >
               Book a Tour
-            </a>
+            </button>
           </div>
         </div>
 
@@ -124,6 +131,7 @@ export default function Destinations() {
             {destinations.map((dest, index) => (
               <motion.div
                 key={index}
+                onClick={() => handleBookTour(dest.name)}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "0px 100px 0px 0px" }}

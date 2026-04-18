@@ -114,7 +114,7 @@ export default function CarFleet() {
                     Call
                   </a>
                   <a
-                    href="https://wa.me/919892676143"
+                    href={`https://wa.me/919892676143?text=*Car Booking Inquiry*%0A%0AHi, I am interested in booking the *${car.name}* (${car.type}). Please provide me with more details.`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 text-center bg-orange-500 text-white py-3 rounded-xl font-semibold hover:bg-orange-600 transition-colors shadow-md shadow-orange-500/20"

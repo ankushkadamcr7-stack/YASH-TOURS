@@ -61,7 +61,12 @@ export default function Services() {
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-3">{service.title}</h4>
               <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
-              <a href="#contact" className="inline-flex items-center font-semibold text-orange-500 hover:text-orange-600 transition-colors">
+              <a 
+                href={`https://wa.me/919892676143?text=*Service Inquiry*%0A%0AHi, I am interested in your *${service.title}* service. Could you please provide me with more details and pricing?`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center font-semibold text-orange-500 hover:text-orange-600 transition-colors"
+              >
                 Book Now <span className="ml-2">→</span>
               </a>
             </motion.div>

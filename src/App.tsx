@@ -16,6 +16,7 @@ import Stats from './components/Stats';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import FloatingButtons from './components/FloatingButtons';
+import HowItWorks from './components/HowItWorks';
 
 export default function App() {
   return (
@@ -27,7 +28,7 @@ export default function App() {
         <Services />
         <WhyChooseUs />
         <CarFleet />
-        <PopularRoutes />
+        <HowItWorks />
         <Destinations />
         <Testimonials />
         <Stats />

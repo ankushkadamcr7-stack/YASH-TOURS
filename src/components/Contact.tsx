@@ -97,12 +97,16 @@ export default function Contact() {
           {/* Contact Form */}
           <div className="bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
             <h4 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h4>
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">Your Name</label>
                   <input
                     type="text"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-50 transition-colors"
                     placeholder="John Doe"
                   />
@@ -111,6 +115,10 @@ export default function Contact() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
                   <input
                     type="tel"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-50 transition-colors"
                     placeholder="+91 98926 76143"
                   />
@@ -121,6 +129,9 @@ export default function Contact() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Email Address</label>
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-50 transition-colors"
                   placeholder="john@example.com"
                 />
@@ -130,16 +141,20 @@ export default function Contact() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
                 <textarea
                   rows={4}
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
                   className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 bg-gray-50 transition-colors resize-none"
                   placeholder="How can we help you?"
                 ></textarea>
               </div>
               
               <button
-                type="button"
+                type="submit"
                 className="w-full bg-blue-900 text-white py-4 rounded-xl font-bold hover:bg-blue-800 transition-colors shadow-lg shadow-blue-900/20 flex items-center justify-center gap-2"
               >
-                <span>Send Message</span>
+                <span>Send via WhatsApp</span>
                 <Send size={18} />
               </button>
             </form>

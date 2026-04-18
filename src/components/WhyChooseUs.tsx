@@ -81,8 +81,8 @@ export default function WhyChooseUs() {
             >
               <div className="absolute inset-0 bg-blue-900 rounded-3xl transform translate-x-4 translate-y-4"></div>
               <img
-                src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=2070&auto=format&fit=crop"
-                alt="Happy family traveling"
+                src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop"
+                alt="Woman travel concept"
                 className="relative z-10 rounded-3xl shadow-xl w-full h-auto object-cover aspect-[4/3]"
                 referrerPolicy="no-referrer"
               />
