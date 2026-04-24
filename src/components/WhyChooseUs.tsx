@@ -52,7 +52,7 @@ export default function WhyChooseUs() {
                 <span className="text-blue-900">Travel Experience</span>
               </h3>
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                At Yash Tours & Travels, we go the extra mile to ensure your journey is safe, comfortable, and memorable. Our commitment to quality service sets us apart.
+                At Your Tours & Travel, we go the extra mile to ensure your journey is safe, comfortable, and memorable. Our commitment to quality service sets us apart.
               </p>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

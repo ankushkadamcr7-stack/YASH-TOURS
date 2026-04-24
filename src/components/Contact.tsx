@@ -62,8 +62,8 @@ export default function Contact() {
                   <Mail size={24} />
                 </div>
                 <h4 className="text-lg font-bold text-gray-900 mb-2">Email Us</h4>
-                <p className="text-gray-600 mb-1">info@yashtours.com</p>
-                <p className="text-gray-600">booking@yashtours.com</p>
+                <p className="text-gray-600 mb-1">info@yourtours.com</p>
+                <p className="text-gray-600">booking@yourtours.com</p>
               </div>
             </div>
 
@@ -74,7 +74,7 @@ export default function Contact() {
               <div>
                 <h4 className="text-lg font-bold text-gray-900 mb-2">Our Location</h4>
                 <p className="text-gray-600">
-                  Shop No. 5, Main Road, Near Bus Stand, Ratnagiri, Maharashtra 415612
+                  Ratnagiri, Maharashtra
                 </p>
               </div>
             </div>

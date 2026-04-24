@@ -17,7 +17,7 @@ const testimonials = [
   {
     name: 'Amit Kadam',
     role: 'Business Owner',
-    content: 'I regularly use Yash Tours for my business trips to Mumbai. They are always punctual and their cars are well maintained. Best taxi service in Ratnagiri.',
+    content: 'I regularly use Your Tours & Travel for my business trips to Mumbai. They are always punctual and their cars are well maintained. Best taxi service in Ratnagiri.',
     rating: 5,
   },
 ];

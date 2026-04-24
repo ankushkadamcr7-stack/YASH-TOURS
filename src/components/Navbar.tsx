@@ -32,7 +32,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className={`text-2xl font-bold tracking-tighter ${isScrolled ? 'text-blue-900' : 'text-white'}`}>
-              YASH <span className="text-orange-500">TOURS</span>
+              YOUR <span className="text-orange-500">TOURS</span>
             </a>
           </div>
 

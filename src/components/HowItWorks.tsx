@@ -32,7 +32,7 @@ export default function HowItWorks() {
           <h2 className="text-sm font-bold text-orange-500 uppercase tracking-widest mb-2">Simple Process</h2>
           <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">How It Works</h3>
           <p className="text-gray-600 text-lg">
-            Booking a ride with Yash Tours is incredibly fast, easy, and completely hassle-free in just 4 simple steps.
+            Booking a ride with Your Tours & Travel is incredibly fast, easy, and completely hassle-free in just 4 simple steps.
           </p>
         </div>
 

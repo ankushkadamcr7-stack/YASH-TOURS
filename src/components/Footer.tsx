@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <a href="#" className="text-2xl font-bold tracking-tighter text-white mb-6 block">
-              YASH <span className="text-orange-500">TOURS</span>
+              YOUR <span className="text-orange-500">TOURS</span>
             </a>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Your trusted partner for safe, comfortable, and affordable travel across Maharashtra. We make every journey memorable.
@@ -56,7 +56,7 @@ export default function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-orange-500 shrink-0 mt-1" />
-                <span className="text-gray-400">Shop No. 5, Main Road, Near Bus Stand, Ratnagiri, Maharashtra 415612</span>
+                <span className="text-gray-400">Ratnagiri, Maharashtra</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={20} className="text-orange-500 shrink-0" />
@@ -64,7 +64,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={20} className="text-orange-500 shrink-0" />
-                <span className="text-gray-400">info@yashtours.com</span>
+                <span className="text-gray-400">info@yourtours.com</span>
               </li>
             </ul>
           </div>
@@ -72,7 +72,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            &copy; {new Date().getFullYear()} Yash Tours & Travels. All rights reserved.
+            &copy; {new Date().getFullYear()} Your Tours & Travel. All rights reserved.
           </p>
           <div className="flex gap-4 text-sm text-gray-500">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
