@@ -45,11 +45,12 @@ export default function HowItWorks() {
               key={index}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -8, scale: 1.05 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.15 }}
-              className="relative z-10 flex flex-col items-center text-center"
+              className="relative z-10 flex flex-col items-center text-center cursor-pointer group"
             >
-              <div className="w-24 h-24 bg-white rounded-full border-4 border-gray-50 shadow-xl flex items-center justify-center text-orange-500 mb-6 bg-gradient-to-br from-white to-orange-50">
+              <div className="w-24 h-24 bg-white rounded-full border-4 border-gray-50 shadow-xl flex items-center justify-center text-orange-500 mb-6 bg-gradient-to-br from-white to-orange-50 group-hover:shadow-2xl transition-all">
                 {step.icon}
               </div>
               <div className="bg-orange-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold absolute top-16 -right-2 lg:right-10 border-4 border-white">

@@ -18,11 +18,12 @@ export default function Stats() {
               key={index}
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
+              whileHover={{ scale: 1.1, translateY: -5 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
-              className="flex flex-col items-center"
+              className="flex flex-col items-center cursor-pointer group"
             >
-              <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mb-4">
+              <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mb-4 group-hover:bg-white/30 transition-colors">
                 {stat.icon}
               </div>
               <div className="text-4xl font-bold mb-2">{stat.value}</div>
